@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(255, 255, 255)">
+    <div class="container">
+      <input type="button" value="Random Color" />
+      <div class="groupSlider">
+        <h3>Slider RBG</h3>
+        <!-- red -->
+        <div class="subRgb">
+          <label for="sliderR" id="lblRed">Red</label>
+          <div class="colDisplay" id="cRed"></div>
+        </div>
+        <input type="range" min="0" max="255" id="sliderR" class="sliderRGB" />
+        <!-- green -->
+        <div class="subRgb">
+          <label for="sliderG" id="lblGreen">Green</label>
+          <div class="colDisplay" id="cGreen"></div>
+        </div>
+        <input type="range" min="0" max="255" id="sliderG" class="sliderRGB" />
+        <!-- blue -->
+        <div class="subRgb">
+          <label for="sliderB" id="lblBlue">Blue</label>
+          <div class="colDisplay" id="cBlue"></div>
+        </div>
+        <input type="range" min="0" max="255" id="sliderB" class="sliderRGB" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
